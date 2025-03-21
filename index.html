@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">My<span>Portfolio</span></a></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="animate-text">Hello, I'm <span class="highlight">Anthony Maraka</span></h1>
+                <h2 class="animate-text delay-1">I'm a <span class="typing">Full-Stack Web Developer</span></h2>
+                <p class="animate-text delay-2">Welcome to my portfolio! I specialize in creating beautiful and functional websites and web Applications.</p>
+                <div class="cta-buttons animate-text delay-3">
+                    <a href="about.html" class="btn primary-btn">About Me</a>
+                    <a href="projects.html" class="btn secondary-btn">My Projects</a>
+                </div>
+            </div>
+            <div class="hero-image animate-in">
+                <div class="shape"></div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Front-End Web Development</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paintbrush"></i>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-screen"></i>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend Development</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image placeholder-image"></div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A brief description of your first featured project. Highlight key technologies used.</p>
+                        <a href="projects.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image placeholder-image"></div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A brief description of your second featured project. Highlight key technologies used.</p>
+                        <a href="projects.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="projects.html" class="btn primary-btn">View All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>My<span>Portfolio</span></h2>
+                <p>Creating awesome web experiences</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile navigation
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            this.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html> 

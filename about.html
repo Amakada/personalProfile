@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">My<span>Portfolio</span></a></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="profile-container">
+                <div class="profile-photo-wrapper">
+                    <div class="profile-photo">
+                        <!-- Replace the following with your actual photo -->
+                        <img src="assets/profile-placeholder.jpg" alt="Your Name" class="photo-placeholder">
+                        <div class="photo-overlay">
+                            <span>Your Professional Photo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-name">
+                    <h1 class="animate-text">Your Name</h1>
+                    <h2 class="animate-text delay-1">Web Developer & Designer</h2>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p class="animate-on-scroll">Hello! I'm a passionate web developer with a keen eye for design and a love for creating intuitive, dynamic user experiences. My journey in web development began over X years ago, and I've been hooked ever since.</p>
+                
+                <p class="animate-on-scroll">I specialize in front-end development, creating responsive websites that work across all devices. I combine technical skills with creative problem-solving to build applications that are both functional and aesthetically pleasing.</p>
+                
+                <p class="animate-on-scroll">When I'm not coding, you can find me [your hobbies or interests]. I believe that bringing diverse experiences into my work helps me create more innovative solutions.</p>
+            </div>
+            
+            <div class="about-info">
+                <div class="info-section education animate-on-scroll">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Degree in Computer Science</h4>
+                            <p>University Name, 2018-2022</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Web Development Certification</h4>
+                            <p>Certificate Program, 2017</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section experience animate-on-scroll">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Senior Web Developer</h4>
+                            <p>Company Name, 2021-Present</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Web Developer</h4>
+                            <p>Company Name, 2019-2021</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Junior Developer</h4>
+                            <p>Company Name, 2017-2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="interests">
+            <h2 class="section-title">My Interests</h2>
+            <div class="interests-container">
+                <div class="interest-card animate-on-scroll">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Coding</h3>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <i class="fas fa-book"></i>
+                    <h3>Reading</h3>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography</h3>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <i class="fas fa-plane"></i>
+                    <h3>Traveling</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-content animate-on-scroll">
+                <h2>Interested in working together?</h2>
+                <p>I'm always open to discussing new projects and opportunities.</p>
+                <a href="contact.html" class="btn primary-btn">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>My<span>Portfolio</span></h2>
+                <p>Creating awesome web experiences</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile navigation
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            this.classList.toggle('toggle');
+        });
+
+        // Animation for elements when they come into view
+        const observerOptions = {
+            threshold: 0.25
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html> 
