@@ -17,41 +17,7 @@ This is a professional portfolio website built with HTML and vanilla CSS. It fea
 1. **Home** - Introduction, skills, and featured projects
 2. **About** - Personal information, education, experience, and interests
 3. **Projects** - Showcase of your projects with filtering capability
-4. **Contact** - Contact form and contact information
-
-## How to Customize
-
-### Personal Information
-
-- Edit your name and title in the HTML files
-- Replace placeholder text with your own information
-- Update skills, projects, education, and experience details
-
-### Profile Photo
-
-1. Add your professional photo to the `assets` directory
-2. Update the image path in `about.html`:
-   ```html
-   <img src="assets/your-photo.jpg" alt="Your Name" class="photo-placeholder">
-   ```
-
-### Projects
-
-1. For each project, modify the project information in `projects.html`
-2. Add your project images to the `assets` directory
-3. Update the background image paths for project cards
-
-### Contact Information
-
-- Update your email, phone, and location in `contact.html`
-- Add your actual map embed code if desired
-
-### Social Links
-
-- Update the social media links in the footer of each page:
-  ```html
-  <a href="https://github.com/yourusername" class="social-icon"><i class="fab fa-github"></i></a>
-  ```
+4. **Contact** - Contact form and contact informat
 
 ### Color Theme
 
@@ -71,10 +37,5 @@ This is a professional portfolio website built with HTML and vanilla CSS. It fea
 - Google Fonts for typography
 - Unsplash for placeholder images (if used)
 
-## License
 
-This project is available for personal use. Feel free to modify and adapt it for your needs.
-
----
-
-Created with 💜 for your professional portfolio needs. 
+Created with 💜  by ANTHONY MARAKA
